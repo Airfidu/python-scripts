@@ -1,109 +1,128 @@
-🚀 Professional Web Scraping & Monitoring Tools
+# 🚀 Professional Web Scraping & Monitoring Tools
 
-High-quality Python automation scripts for data extraction and API monitoring
+> High-quality Python automation scripts for data extraction and API monitoring
 
-📋 Overview
+## 📋 Overview
 
 Professional-grade automation tools built for businesses and developers who need reliable data extraction and API monitoring solutions. Clean code, production-ready, and fully customizable.
 
-🛠️ Projects
+---
 
-1️⃣ Sports Matches Scraper (scrape_matches.py)
+## 🛠️ Projects
+
+### 1️⃣ **Sports Matches Scraper** (`scrape_matches.py`)
 
 Automated extraction of sports match data from Yallakora with beautiful Excel output.
-Key Features:
 
-📅 Fetch matches by custom date
+**Key Features:**
+- 📅 Fetch matches by custom date
+- 🎨 Professional Excel formatting (colored headers, borders, alignment)
+- ⚡ Fast & reliable BeautifulSoup parsing
+- 📊 Clean data structure ready for analysis
 
-🎨 Professional Excel formatting (colored headers, borders, alignment)
+**Use Cases:**
+- Sports analytics platforms
+- Betting data collection
+- Match tracking systems
+- Sports news automation
 
-⚡ Fast & reliable BeautifulSoup parsing
-
-📊 Clean data structure ready for analysis
-
-Use Cases:
-
-Sports analytics platforms
-Betting data collection
-Match tracking systems
-Sports news automation
-
-Output Sample:
-
+**Output Sample:**
+```
 ✅ Data saved: matches_23_11_2022.xlsx
-
 🎨 Formatted with headers, borders, and optimal column widths
+```
 
+---
 
-2️⃣ Weather Data Collector (scrape_weather.py)
+### 2️⃣ **Weather Data Collector** (`scrape_weather.py`)
 
 Real-time weather data extraction with professional Excel reporting.
 
-Key Features:
+**Key Features:**
+- 🌍 Multi-city support
+- 🌡️ Complete metrics (temperature, humidity, wind, pressure)
+- 📱 OpenWeatherMap API integration
+- 🎨 Auto-formatted Excel with alternating row colors
 
-🌍 Multi-city support
+**Use Cases:**
+- Weather dashboards
+- Travel planning apps
+- Agricultural monitoring
+- Climate data analysis
 
-🌡️ Complete metrics (temperature, humidity, wind, pressure)
-
-📱 OpenWeatherMap API integration
-
-🎨 Auto-formatted Excel with alternating row colors
-
-Use Cases:
-
-Weather dashboards
-
-Travel planning apps
-
-Agricultural monitoring
-
-Climate data analysis
-
-Output Sample:
-
+**Output Sample:**
+```
 ✅ Weather data for 6 cities saved
-
 📊 Professional Excel format with color-coded rows
+```
 
-🚀 Quick Start
+---
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+# Clone repository
+git clone https://github.com/Airfidu/python-scripts/web_scraping/scrape_matches.py
+cd web-scraping
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-Usage
+### Usage
 
-Matches Scraper:
-
-bashpython scrape_matches.py
+**Matches Scraper:**
+```bash
+python scrape_matches.py
 # Enter date when prompted: 23/11/2022
+```
 
-Weather Scraper:
-
-bashpython scrape_weather.py
-
+**Weather Scraper:**
+```bash
+python scrape_weather.py
 # Enter your OpenWeatherMap API key
 # Choose default cities or enter custom ones
+```
 
-📦 Dependencies
+---
 
+## 📦 Dependencies
+
+```
 requests
-
 beautifulsoup4
-
 lxml
-
 pandas
-
 openpyxl
+```
 
-💼 Why Choose These Tools?
+---
 
-✅ Production-Ready - Tested and optimized for real-world use
+## 💼 Why Choose These Tools?
 
-✅ Clean Code - Well-structured, documented, and maintainable
+✅ **Production-Ready** - Tested and optimized for real-world use  
+✅ **Clean Code** - Well-structured, documented, and maintainable  
+✅ **Professional Output** - Beautiful Excel files, not raw data dumps  
+✅ **Error Handling** - Robust exception management  
+✅ **Customizable** - Easy to modify for specific needs  
 
-✅ Professional Output - Beautiful Excel files, not raw data dumps
+---
 
-✅ Error Handling - Robust exception management
-✅ Customizable - Easy to modify for specific needs
+## 🎯 Experience
 
+These scripts represent my expertise in:
+- Web scraping & data extraction
+- API integration
+- Data processing & formatting
+- Production-quality code delivery
+
+**Need custom automation?** I build tailored solutions for:
+- E-commerce data scraping
+- Price monitoring systems
+- Social media data extraction
+- Real-time data dashboards
+- API integration services
+
+---
