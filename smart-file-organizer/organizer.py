@@ -4,7 +4,6 @@ from datetime import datetime
 from pathlib import Path
 
 class FileOrganizer:
-    """Professional File Organizer - Organizes files by type and date"""
     
     def __init__(self, source_dir):
         self.source_dir = Path(source_dir)
@@ -29,7 +28,7 @@ class FileOrganizer:
         }
     
     def get_category(self, file_ext):
-        """Determines file category based on extension"""
+    
         file_ext = file_ext.lower()
         for category, extensions in self.categories.items():
             if file_ext in extensions:
@@ -37,7 +36,7 @@ class FileOrganizer:
         return 'Others'
     
     def get_file_date(self, file_path):
-        """Extracts file creation or modification date"""
+      
         try:
             timestamp = os.path.getmtime(file_path)
             return datetime.fromtimestamp(timestamp)
@@ -45,7 +44,7 @@ class FileOrganizer:
             return datetime.now()
     
     def create_safe_filename(self, dest_path, filename):
-        """Creates a safe filename in case a file with the same name exists"""
+      
         if not dest_path.exists():
             return dest_path
         
@@ -61,7 +60,6 @@ class FileOrganizer:
         return dest_path
     
     def organize_files(self, by_date=True, by_type=True):
-        """Organizes files in the specified folder"""
         
         if not self.source_dir.exists():
             print(f"❌ Folder does not exist: {self.source_dir}")
@@ -124,7 +122,7 @@ class FileOrganizer:
         self.print_statistics()
     
     def print_statistics(self):
-        """Prints organization statistics"""
+       
         print("\n" + "=" * 60)
         print("📊 Organization Statistics:")
         print("=" * 60)
@@ -142,7 +140,6 @@ class FileOrganizer:
 
 
 def main():
-    """Main function to run the script"""
     
     print("=" * 60)
     print("🗂️  Professional File Organizer")
